@@ -15,4 +15,11 @@ jobs:
       run:  |
         cd pwauth
         make
+        
+    - name: upload artifact
+      uses: actions/upload-artifact@v3
+      with:
+        path: pwauth/pwauth
+        retention-days: 90
+          pwauth/pwauth
      
