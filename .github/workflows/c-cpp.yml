@@ -19,6 +19,7 @@ jobs:
     - name: upload artifact
       uses: actions/upload-artifact@v3
       with:
+        name: pwauth
         path: pwauth/pwauth
         retention-days: 90
           pwauth/pwauth
